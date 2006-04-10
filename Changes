@@ -1,0 +1,7 @@
+Revision history for B-Lint-StrictOO
+
+0.01    2006-04-10
+0.02    2006-04-10
+        Improved &classes 
+        Removed deprecated defined %{...}
+

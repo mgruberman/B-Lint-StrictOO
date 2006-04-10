@@ -1,0 +1,64 @@
+NAME
+    B::Lint::StrictOO - Apply strict to classes and methods
+
+VERSION
+    Version 0.01
+
+SYNOPSIS
+    Validates that classes exist, that methods that are called on classes
+    and objects, and variables aren't used as method names.
+
+   
+
+      sub Hickory::Dickory::dock;
+
+      Mouse->dockk;           # Class Mouse doesn't exist
+      Hickory::Dickory->dock;
+      Hickory::Dickory->$_;   # Symbolic method call
+      $obj->dockk;            # Object can't do method
+      $obj->dock;
+      $obj->$_;               # Symbolic method call
+
+PRIVATE FUNCTIONS
+  match
+  @classes = classes( file name )
+AUTHOR
+    Joshua ben Jore, "<jjore at cpan.org>"
+
+BUGS
+    Please report any bugs or feature requests to "bug-b-lint-strictoo at
+    rt.cpan.org", or through the web interface at
+    <http://rt.cpan.org/NoAuth/ReportBug.html?Queue=B-Lint-StrictOO>. I will
+    be notified, and then you'll automatically be notified of progress on
+    your bug as I make changes.
+
+SUPPORT
+    You can find documentation for this module with the perldoc command.
+
+        perldoc B::Lint::StrictOO
+
+    You can also look for information at:
+
+    *   AnnoCPAN: Annotated CPAN documentation
+
+        <http://annocpan.org/dist/B-Lint-StrictOO>
+
+    *   CPAN Ratings
+
+        <http://cpanratings.perl.org/d/B-Lint-StrictOO>
+
+    *   RT: CPAN's request tracker
+
+        <http://rt.cpan.org/NoAuth/Bugs.html?Dist=B-Lint-StrictOO>
+
+    *   Search CPAN
+
+        <http://search.cpan.org/dist/B-Lint-StrictOO>
+
+ACKNOWLEDGEMENTS
+COPYRIGHT & LICENSE
+    Copyright 2006 Joshua ben Jore, all rights reserved.
+
+    This program is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
