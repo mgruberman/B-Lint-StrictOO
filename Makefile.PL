@@ -18,9 +18,13 @@ WriteMakefile1(
     VERSION_FROM  => 'lib/B/Lint/StrictOO.pm',
     ABSTRACT_FROM => 'lib/B/Lint/StrictOO.pm',
     PREREQ_PM     => {
+        # Lint 1.09+ had working plugins
         'B::Lint'     => '1.09',
+
         'File::Slurp' => 0,
-        'B::Utils'    => 0,
+
+        # Utils 0.09 the B::OP::siblings method was busted
+        'B::Utils'    => '0.10',
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES    => 'B-Lint-StrictOO-*' },

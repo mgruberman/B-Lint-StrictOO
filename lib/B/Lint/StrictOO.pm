@@ -42,7 +42,7 @@ use B::Lint;
 B::Lint->register_plugin( __PACKAGE__, [ 'oo' ] );
 
 use File::Slurp qw( read_file );
-use B::Utils;
+use B::Utils 0.10;
 
 use constant _invocant_is_lexical_object => 1;
 use constant _invocant_is_global_object  => 2;
@@ -123,20 +123,20 @@ sub match {
 }
 
 
-sub B::OP::siblings {
-    my @siblings = $_[0];
-
-    my $sibling;
-    while ( $siblings[-1]->can('sibling') ) {
-        push @siblings, $siblings[-1]->sibling;
-    }
-    shift @siblings;
-
-    # Remove trailing B::NULL
-    pop @siblings while @siblings && ! ${$siblings[-1]};
-
-    return @siblings;
-}
+#sub B::OP::siblings {
+#    my @siblings = $_[0];
+#
+#    my $sibling;
+#    while ( $siblings[-1]->can('sibling') ) {
+#        push @siblings, $siblings[-1]->sibling;
+#    }
+#    shift @siblings;
+#
+#    # Remove trailing B::NULL
+#    pop @siblings while @siblings && ! ${$siblings[-1]};
+#
+#    return @siblings;
+#}
 
 
 sub class_exists {
