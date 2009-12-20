@@ -1,0 +1,8 @@
+*~
+*#*
+B-Lint-StrictOO-*
+blib/*
+pm_to_blib
+Makefile
+Makefile.old
+*.bak
