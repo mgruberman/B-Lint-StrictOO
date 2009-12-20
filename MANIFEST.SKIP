@@ -1,3 +1,9 @@
-cvsignore
 ~$
 #
+^\.git
+^B-Lint-StrictOO-*
+^blib
+Makefile
+\.bak$
+pm_to_blib
+Makefile.old
