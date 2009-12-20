@@ -1,8 +1,8 @@
 Changes
+lib/B/Lint/StrictOO.pm
 MANIFEST
 MANIFEST.SKIP
-META.yml # Will be created by "make dist"
-Makefile.PL
+META.yml			# Will be created by "make dist"
 README
-lib/B/Lint/StrictOO.pm
-
+t/class_exists.pl
+t/class_exists.t
