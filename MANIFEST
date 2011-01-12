@@ -1,8 +1,0 @@
-Changes
-lib/B/Lint/StrictOO.pm
-MANIFEST
-MANIFEST.SKIP
-META.yml			# Will be created by "make dist"
-README
-t/class_exists.pl
-t/class_exists.t
