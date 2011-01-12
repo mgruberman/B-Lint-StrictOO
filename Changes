@@ -1,6 +1,8 @@
 Revision history for B-Lint-StrictOO
 
 {{$NEXT}}
+
+0.04      2011-01-12 01:16:28 PST8PDT
     Use Dist::Zilla
     No longer require File::Slurp
     Tests pass on perl-5.12.2
